@@ -7,7 +7,6 @@ const text = [
 let textIndex = 0;
 let charIndex = 0;
 const typing = document.getElementById("typing");
-
 function type() {
     if (charIndex < text[textIndex].length) {
         typing.textContent += text[textIndex].charAt(charIndex);
@@ -30,3 +29,6 @@ function erase() {
 }
 
 type();
+
+typing.style.borderRight = "3px solid white";
+typing.style.animation = "blink 0.7s infinite";

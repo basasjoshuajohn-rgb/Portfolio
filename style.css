@@ -97,17 +97,6 @@ nav a:hover{
     display:inline-block;
 }
 
-#typing::after{
-    content:"|";
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink{
-    50%{
-        opacity:0;
-    }
-}
-
 nav a:hover{
     color:#00d4ff;
 }
@@ -119,6 +108,6 @@ nav a:hover{
 
 @keyframes blink{
     50%{
-        opacity:0;
+        border-color: transparent;
     }
 }
