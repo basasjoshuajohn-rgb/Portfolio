@@ -1,6 +1,6 @@
 body{
     font-family: Arial, sans-serif;
-    background:#ffffff;
+    background:#121212;
     color:white;
     margin:0;
 }
@@ -9,6 +9,10 @@ header{
     background:#0078ff;
     padding:40px;
     text-align:center;
+}
+
+header h1{
+    font-size:45px;
 }
 
 section{
@@ -54,6 +58,19 @@ nav a:hover{
     color:#00d4ff;
 }
 
+/* Typing Effect Cursor */
+#typing::after{
+    content:"|";
+    animation:blink 0.7s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+
+/* Project Cards */
 .project-card{
     background:#111827;
     padding:20px;
@@ -69,10 +86,10 @@ nav a:hover{
 }
 
 .project-card h3{
-    margin-bottom:10px;
     color:#38bdf8;
 }
 
+/* Buttons */
 .btn{
     display:inline-block;
     margin-top:15px;
@@ -88,26 +105,12 @@ nav a:hover{
     background:#38bdf8;
 }
 
+/* Hero Buttons */
 .hero-buttons{
+    text-align:center;
     margin-top:25px;
 }
 
 .hero-buttons .btn{
     margin:10px;
-    display:inline-block;
-}
-
-nav a:hover{
-    color:#00d4ff;
-}
-
-#typing::after{
-    content:"|";
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink{
-    50%{
-        border-color: transparent;
-    }
 }

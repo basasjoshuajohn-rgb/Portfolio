@@ -6,29 +6,37 @@ const text = [
 
 let textIndex = 0;
 let charIndex = 0;
-const typing = document.getElementById("typing");
-function type() {
-    if (charIndex < text[textIndex].length) {
-        typing.textContent += text[textIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, 80);
-    } else {
-        setTimeout(erase, 2000);
-    }
-}
+let isDeleting = false;
 
-function erase() {
-    if (charIndex > 0) {
-        typing.textContent = text[textIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, 40);
+const typing = document.getElementById("typing");
+
+function type() {
+    let currentText = text[textIndex];
+
+    if (!isDeleting) {
+        typing.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(type, 1500);
+            return;
+        }
     } else {
-        textIndex = (textIndex + 1) % text.length;
-        setTimeout(type, 500);
+        typing.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            isDeleting = false;
+            textIndex++;
+
+            if (textIndex === text.length) {
+                textIndex = 0;
+            }
+        }
     }
+
+    setTimeout(type, isDeleting ? 50 : 100);
 }
 
 type();
-
-typing.style.borderRight = "3px solid white";
-typing.style.animation = "blink 0.7s infinite";
