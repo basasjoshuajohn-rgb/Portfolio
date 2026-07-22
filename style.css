@@ -87,3 +87,12 @@ nav a:hover{
 .btn:hover{
     background:#38bdf8;
 }
+
+.hero-buttons{
+    margin-top:25px;
+}
+
+.hero-buttons .btn{
+    margin:10px;
+    display:inline-block;
+}
