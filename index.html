@@ -3,33 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login System</title>
+    <title>Joshua John Basas | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <main class="login-box">
-        <h1>Welcome Back</h1>
-        <p class="subtitle">Login to continue</p>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <form id="loginForm">
-            <label for="username">Username</label>
-            <input id="username" type="text" placeholder="Enter your username">
+<header>
+    <h1>Joshua John S. Basas</h1>
+    <h2 id="typing"></h2>
 
-            <label for="password">Password</label>
-            <div class="password-box">
-                <input id="password" type="password" placeholder="Enter your password">
-                <button type="button" id="showPassword">Show</button>
-            </div>
+    <div class="hero-buttons">
+        <a href="#projects" class="btn">🚀 View Projects</a>
+        <a href="#contact" class="btn">📩 Contact Me</a>
+    </div>
+</header>
 
-            <p id="message"></p>
 
-            <button class="login-button" type="submit">Login</button>
-        </form>
+<section id="about">
+    <h2>👨‍💻 About Me</h2>
+    <p>
+        Hello! I am Joshua John Basas, a first-year Bachelor of Science in Computer Science
+        student at <strong>North Eastern Mindanao State University (NEMSU)</strong>.
+        I am passionate about programming, problem-solving, and software development.
+        My goal is to become a professional Software Engineer and build useful applications
+        that make people's lives easier.
+    </p>
+</section>
 
-        <p class="hint">Try: <strong>joshua</strong> / <strong>1234</strong></p>
-    </main>
 
-    <script src="script.js"></script>
+<section id="education">
+    <h2>🎓 Education</h2>
+    <p><strong>North Eastern Mindanao State University (NEMSU)</strong></p>
+    <p>Bachelor of Science in Computer Science</p>
+    <p>First-Year Student</p>
+</section>
+
+
+<section id="skills">
+    <h2>🛠 Skills</h2>
+
+    <p>Python</p>
+    <progress value="70" max="100"></progress>
+
+    <p>HTML</p>
+    <progress value="80" max="100"></progress>
+
+    <p>CSS</p>
+    <progress value="60" max="100"></progress>
+
+    <p>JavaScript</p>
+    <progress value="30" max="100"></progress>
+
+    <p>Git & GitHub</p>
+    <progress value="40" max="100"></progress>
+
+</section>
+
+
+<section id="projects">
+    <h2>💻 Projects</h2>
+
+    <div class="project-card">
+        <h3>🧮 Python Calculator</h3>
+        <p>A simple calculator application built using Python.</p>
+        <a href="#" class="btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>🔐 Login System</h3>
+        <p>A login page built using HTML, CSS, and JavaScript.</p>
+        <a href="https://basasjoshuajohn-rgb.github.io/Login-System/" class="btn" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>🌐 Portfolio Website</h3>
+        <p>My personal portfolio created using HTML and CSS.</p>
+        <a href="https://basasjoshuajohn-rgb.github.io/Portfolio/" class="btn" target="_blank">View Project</a>
+    </div>
+</section>
+
+
+<section id="certificates">
+    <h2>📜 Certificates</h2>
+
+    <h3>NC II - Electrical Installation and Maintenance (EIM)</h3>
+    <p>TESDA National Certificate II</p>
+
+    <h3>More Certificates Coming Soon</h3>
+    <p>I am continuously learning and earning new certifications.</p>
+
+</section>
+
+
+<section id="contact">
+    <h2>📞 Contact</h2>
+
+    <p><strong>Phone:</strong> 09515497853</p>
+
+    <p>
+        <strong>Email:</strong> 
+        basasjoshuajohn@gmail.com
+    </p>
+
+    <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/basasjoshuajohn-rgb" target="_blank">
+            github.com/basasjoshuajohn-rgb
+        </a>
+    </p>
+
+</section>
+
+
+<footer>
+    <p>© 2026 Joshua John Basas | Aspiring Software Engineer</p>
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
