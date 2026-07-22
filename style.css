@@ -1,9 +1,30 @@
 body{
-    font-family: Arial;
-    text-align: center;
-    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    background:#121212;
+    color:white;
+    margin:0;
 }
 
-h1{
-    color: blue;
+header{
+    background:#0078ff;
+    padding:40px;
+    text-align:center;
+}
+
+section{
+    width:80%;
+    margin:30px auto;
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:10px;
+}
+
+h2{
+    color:#00d4ff;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0b0b0b;
 }
