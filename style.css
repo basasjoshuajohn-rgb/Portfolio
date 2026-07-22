@@ -107,3 +107,18 @@ nav a:hover{
         opacity:0;
     }
 }
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+#typing::after{
+    content:"|";
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
