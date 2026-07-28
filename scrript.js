@@ -1,5 +1,7 @@
 const text = [
-
+    "Aspiring Software Engineer",
+    "BS Computer Science Student",
+    "Future Full-Stack Developer",
 ];
 
 let textIndex = 0;
