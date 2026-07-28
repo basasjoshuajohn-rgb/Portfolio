@@ -1,7 +1,7 @@
 const text = [
     "Aspiring Software Engineer",
+    "jjjjjjjjjjjj",
     "BS Computer Science Student",
-    "learning",
     "Future Full-Stack Developer"
 ];
 
